@@ -89,7 +89,7 @@ void Car::manufacturerChange(char const* const newManufacturer) {
 }
 void Car::modelNameChange(char const* const newModelName){
     delete [] model;
-   model = new char [strlen (newModelName)];
+   model = new char [strlen (newModelName +1)];
    strcpy (model, newModelName); 
    }
 void Car::reevaluateStats(PerformanceStats newStats){
