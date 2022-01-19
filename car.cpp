@@ -84,12 +84,14 @@ DoorKind Car::getBackseatDoors() const {
 }
 void Car::manufacturerChange(char const* const newManufacturer) {
     delete [] manufacturer;
-    manufacturer = strdup (newManufacturer);
+   manufacturer = new char [strlen(newManufacturer +1)];
+   strcpy (manufacturer, newManufacturer);
 }
 void Car::modelNameChange(char const* const newModelName){
     delete [] model;
-    model = strdup (newModelName);
-}
+   model = new char [strlen (newModelName)];
+   strcpy (model, newModelName); 
+   }
 void Car::reevaluateStats(PerformanceStats newStats){
 //DOO
 horsepower = newStats.horsepower;
