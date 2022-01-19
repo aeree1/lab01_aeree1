@@ -46,7 +46,7 @@ seatCount = o.getSeatCount();
     //CONTINUE
 }
 Car& Car::operator=(Car const& o) {
-    if (this == o) {
+    if (this == &o) {
         return *this;
     }
     manufacturer = NULL;
