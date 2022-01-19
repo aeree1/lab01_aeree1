@@ -19,8 +19,7 @@ Car::Car(){
 }
 
 Car::Car(char const* const manufacturerName, char const* const modelName, PerformanceStats perf, uint8_t numSeats, DoorKind backseatDoorDesign) {
-//manufacturer = manufacturerName;
-//model = modelName;
+
 manufacturer = NULL;
 model = NULL;
 manufacturerChange(manufacturerName);
