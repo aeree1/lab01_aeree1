@@ -4,7 +4,7 @@
 #include "car.hpp"
 #include <cstddef>
 #include <cstring>
-// #include .......
+
 
 Car::Car(){
     manufacturer = NULL;
